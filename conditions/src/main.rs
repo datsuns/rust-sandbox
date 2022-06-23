@@ -14,4 +14,7 @@ fn main() {
     let condition = true;
     let number = if condition { 5 } else { 6 };
     println!("The value of number is: {}", number);
+
+    // compile error because if expression must have the same type
+    //let number2 = if condition { 5 } else { "six" };
 }
