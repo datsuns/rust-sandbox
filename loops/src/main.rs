@@ -1,3 +1,13 @@
+fn loop_by_condition_is_while() {
+    let mut number = 3;
+
+    while number != 0 {
+        println!("{}!", number);
+        number -= 1;
+    }
+    println!("LIFTOFF!!!");
+}
+
 fn main() {
     let mut count = 0;
     'counting_up: loop {
@@ -16,4 +26,5 @@ fn main() {
         count += 1;
     }
     println!("End count = {}", count);
+    loop_by_condition_is_while();
 }
