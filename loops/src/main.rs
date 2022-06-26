@@ -1,3 +1,17 @@
+fn loop_for_with_range() {
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+}
+
+fn loop_for_collection_is_for() {
+    let a = [10, 20, 30, 40, 50];
+    for element in a {
+        println!("the value is: {}", element);
+    }
+}
+
 fn loop_by_condition_is_while() {
     let mut number = 3;
 
@@ -27,4 +41,6 @@ fn main() {
     }
     println!("End count = {}", count);
     loop_by_condition_is_while();
+    loop_for_collection_is_for();
+    loop_for_with_range();
 }
