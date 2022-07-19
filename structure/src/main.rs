@@ -5,6 +5,10 @@ struct User {
     active: bool,
 }
 
+// タプル構造体
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
+
 fn generate_instance_of_structure() {
     let user1 = User {
         email: String::from("someone@example.com"),
